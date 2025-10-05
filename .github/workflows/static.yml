@@ -4,8 +4,7 @@ name: Deploy static content to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["master"]
-
+    branches: ["master"]  # Change to "master" if that's your default branch
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -31,13 +30,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
+          # Upload entire repository. Change this if your build outputs to a subdirectory (e.g., 'dist')
           path: '.'
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

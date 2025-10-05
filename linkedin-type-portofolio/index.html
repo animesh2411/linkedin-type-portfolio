@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Animesh Gupta | Backend Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <!-- Dark mode toggle at top right -->
+  <button class="mode-toggle no-print" id="modeToggle" aria-label="Toggle dark mode">
+    <span id="modeIcon">
+      <!-- Bulb SVG -->
+      <svg viewBox="0 0 24 24"><path fill="currentColor" d="M9 21h6a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1zm3-19a7 7 0 0 1 7 7c0 2.386-1.198 4.25-2.64 5.708-.651.644-1.36 1.344-1.36 2.292V17a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-.001c0-.948-.709-1.648-1.36-2.292C5.198 13.25 4 11.386 4 9a7 7 0 0 1 7-7zm0 2a5 5 0 0 0-5 5c0 1.661.857 3.048 2.072 4.263C11.07 13.622 11.683 14.195 12 14.874c.317-.679.93-1.252 2.928-3.611C16.143 12.048 17 10.661 17 9a5 5 0 0 0-5-5z"/></svg>
+    </span>
+  </button>
+  <!-- Download PDF button just below the bulb -->
+  <button class="download-btn no-print" id="downloadBtn" aria-label="Download as PDF">
+    <span>
+      <svg width="28" height="28" viewBox="0 0 24 24"><path fill="currentColor" d="M5 20h14v-2H5v2zm7-14v8.17l2.59-2.58L16 13l-4 4-4-4 1.41-1.41L11 14.17V6h2z"/></svg>
+    </span>
+  </button>
+  <div class="profile-photo-container">
+    <img class="profile-img" alt="Animesh" src="https://github.com/animesh2411.png">
+    <h1>Animesh Gupta</h1>
+  </div>
+  <div class="headline">Backend Developer | Java Specialist | Problem Solver</div>
+  <div class="socials">
+    <a href="https://www.linkedin.com/in/animesh2411/" target="_blank" title="LinkedIn">
+      <svg viewBox="0 0 448 512" aria-hidden="true"><path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zm-46.44-340.7C24.12 107.3 0 83.18 0 53.64A53.69 53.69 0 0153.77 0a53.77 53.77 0 0153.77 53.64c0 29.54-24.12 53.66-53.7 53.66zM447.9 448h-92.68V302.4c0-34.7-12.4-58.4-43.41-58.4-23.67 0-37.8 16-44.04 31.4-2.26 5.5-2.82 13.2-2.82 21v151.6h-92.7s1.22-246.2 0-271.1h92.7V205c12.3-19 34.4-46.1 83.68-46.1 61 0 106.72 39.8 106.72 125.4V448z"/></svg>
+    </a>
+    <a href="https://github.com/animesh2411" target="_blank" title="GitHub">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="currentColor" d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.237c-3.338.724-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.805 1.305 3.492.998.108-.775.418-1.305.762-1.605-2.665-.304-5.467-1.332-5.467-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.5 11.5 0 013.003-.404c1.019.005 2.047.138 3.006.404 2.292-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.233 1.911 1.233 3.221 0 4.609-2.805 5.624-5.479 5.921.43.371.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.565 21.797 24 17.299 24 12c0-6.627-5.373-12-12-12z"/>
+      </svg>
+    </a>
+    <a href="mailto:animesh2411@gmail.com" title="Gmail" class="gmail-icon">
+      <svg viewBox="0 0 48 48" aria-hidden="true">
+        <rect x="4" y="8" width="40" height="32" rx="4" fill="#fff"/>
+        <path d="M44 12v24a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V12l20 15 20-15z" fill="#fff"/>
+        <path d="M44 12l-20 15L4 12V8a4 4 0 0 1 4-4h32a4 4 0 0 1 4 4v4z" fill="#fff"/>
+        <path d="M44 12l-20 15L4 12V8a4 4 0 0 1 4-4h32a4 4 0 0 1 4 4v4z" fill="#fff"/>
+        <path d="M44 12l-20 15L4 12v-4c0-2.21 1.79-4 4-4h32c2.21 0 4 1.79 4 4v4z" fill="#d93025"/>
+        <path d="M4 12l20 15L44 12" fill="none" stroke="#b31412" stroke-width="2"/>
+      </svg>
+    </a>
+  </div>
+</header>
+<div class="container">
+  <section>
+    <h2>About Me</h2>
+    <p>
+      Experienced Backend Developer with a strong foundation in Java and scalable systems.
+      Passionate about clean code, APIs, and high-performance microservices.
+      Skilled in collaborating with cross-functional teams to deliver robust solutions.
+    </p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <li>
+        <svg width="22" height="22" viewBox="0 0 32 32"><g><path fill="#0073b1" d="M20.552 17.006s1.685 1.388-1.784 2.48c-5.212 1.577-2.255 2.477.009 3.53c-5.736 1.23-12.186-.263-4.937-3.107c4.699-2.012-1.27-3.752-2.051-5.295c-.579-1.128 1.054-2.227 3.678-3.099c2.124-.693 4.537-.546 6.21.052c2.285.803 3.542 2.663 2.049 3.964c-1.764 1.497-4.447.896-4.447.896z"/><path fill="#0073b1" d="M24.648 25.354c-3.794.435-6.035.431-10.084-.019c-2.044-.221-2.197-1.079-.41-1.195c8.229-.531 12.27 1.152 10.494 1.214z"/><path fill="#0073b1" d="M12.679 15.105s-4.625-1.102-1.642-3.003c3.262-2.12 5.807-2.021 8.98-1.119c1.021.272.438.941.438.941s-6.807 1.713-7.776 3.181z"/><path fill="#0073b1" d="M22.509 13.276c.436-.85 2.649-1.543 3.275-2.736c-1.094.695-2.181 1.252-3.398 1.606c-.69.2-.933.381-.877.606z"/></g></svg>
+        Java (Spring Boot, JPA, Hibernate)
+      </li>
+      <li>
+        <svg width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" stroke="#0073b1" stroke-width="2" fill="none"/><rect x="7" y="7" width="6" height="6" fill="#0073b1"/></svg>
+        RESTful APIs
+      </li>
+      <li>
+        <svg width="20" height="20" viewBox="0 0 20 20"><rect x="2" y="2" width="6" height="6" fill="#0073b1"/><rect x="12" y="2" width="6" height="6" fill="#0073b1"/><rect x="7" y="12" width="6" height="6" fill="#0073b1"/></svg>
+        Microservices
+      </li>
+      <li>
+        <svg width="20" height="20" viewBox="0 0 20 20"><ellipse cx="10" cy="5" rx="8" ry="3" fill="#0073b1"/><rect x="2" y="5" width="16" height="10" fill="#e1e9ee"/><ellipse cx="10" cy="15" rx="8" ry="3" fill="#0073b1"/></svg>
+        SQL & NoSQL (MySQL, MongoDB)
+      </li>
+      <li>
+        <svg width="20" height="20" viewBox="0 0 20 20"><ellipse cx="10" cy="13" rx="8" ry="5" fill="#e1e9ee"/><ellipse cx="13" cy="10" rx="5" ry="3" fill="#0073b1"/></svg>
+        Cloud (AWS, Azure basics)
+      </li>
+      <li>
+        <svg width="20" height="20" viewBox="0 0 20 20"><rect x="2" y="10" width="16" height="6" fill="#0073b1"/><rect x="7" y="4" width="6" height="6" fill="#e1e9ee"/></svg>
+        Docker & Kubernetes
+      </li>
+      <li>
+        <svg width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8" stroke="#0073b1" stroke-width="2" fill="#e1e9ee"/><circle cx="10" cy="10" r="3" fill="#0073b1"/></svg>
+        CI/CD (Jenkins, GitHub Actions)
+      </li>
+      <li>
+        <svg width="20" height="20" viewBox="0 0 20 20"><rect x="6" y="6" width="8" height="8" fill="#0073b1"/><rect x="9" y="2" width="2" height="6" fill="#e1e9ee"/><rect x="9" y="12" width="2" height="6" fill="#e1e9ee"/></svg>
+        Unit & Integration Testing
+      </li>
+      <li>
+        <svg width="20" height="20" viewBox="0 0 20 20"><rect x="4" y="4" width="12" height="12" stroke="#0073b1" stroke-width="2" fill="none"/><circle cx="10" cy="10" r="2" fill="#0073b1"/></svg>
+        System Design
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <img class="company-logo" src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="American Express Logo">
+        <div>
+          <strong>Software Engineer 2</strong> - American Express, Gurugram<br>
+          <em>June 2024 – Present</em>
+          <ul>
+            <li>Designed and implemented using Java and Vertx.</li>
+            <li>Servicing systems for our call agents for providing quick resolution to our customers using GenAI services.</li>
+            <li>Developed standalone Java based CRUD functions for storing and managing data in Oracle DB and GCP services.</li>
+            <li>Mentored peer developers and led code reviews.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <img class="company-logo" src="https://upload.wikimedia.org/wikipedia/commons/9/9f/LTIMindtree_Logo.svg" alt="LTIMindtree Logo">
+        <div>
+          <strong>Specialist - Software Engineering</strong> - LTIMindtree, Noida<br>
+          <em>Jan 2022 – May 2024</em>
+          <ul>
+            <li>Developed RESTful APIs consumed by millions of users.</li>
+            <li>Automated deployment pipelines using Jenkins and Docker.</li>
+            <li>Worked as a backend developer to code, test, build, integrate and deploy microservices
+              <br>
+              - in GCP for Sabre Technologies (Air-Sell project) - Maximize the efficiency to serve the agents with a combination of flight booking from the airline provider.
+              <br>
+              - in AWS for the mobile/web application for GE Renewables (Lifespan wind-farm project - a digital product portfolio enabling our customers to maximize renewable asset performance and operations across their fleets).</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <img class="company-logo" src="https://handwiki.org/wiki/images/0/0c/Infogain_logo.jpg" alt="Infogain Logo">
+        <div>
+          <strong>Software Engineer</strong> - Infogain, Noida<br>
+          <em>Apr 2021 – Jan 2022</em>
+          <ul>
+            <li>Worked for FedEx Services with an aim to improve the delivery experience in the US by building scalable applications on microservices architecture using Java, Springboot, and Azure Cloud Services including Azure Function.</li>
+            <li>Wrote automated tests and improved code quality.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <img class="company-logo" src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Tata_Consultancy_Services_old_logo.svg" alt="TCS Logo">
+        <div>
+          <strong>System Engineer</strong> - Tata Consultancy Services, Noida<br>
+          <em>Sept 2018 – Apr 2021</em>
+          <ul>
+            <li>Built custom backend modules for small businesses, including inventory & order management systems.</li>
+            <li>Collaborated with frontend teams to deliver full-stack web solutions using REST APIs.</li>
+            <li>Integrated third-party services (payments, messaging, analytics).</li>
+            <li>Worked for multiple clients including Walgreens Boot Alliance (Dec 2019 – March 2021) and Bayer Business Services (Dec 2018 – Dec 2019)</li>
+           </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <ul class="project-list">
+      <li>
+        <img class="project-thumb" src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=facearea&w=256&q=80" alt="API project">
+        <div>
+          <strong><a href="https://animesh2411.github.io/amp-website-animesh/" target="_blank">AMP Based Portfolio</a></strong><br>
+          AMP carousal based sample portfolio
+        </div>
+      </li>
+      <li>
+        <img class="project-thumb" src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=facearea&w=256&q=80" alt="Microservices project">
+        <div>
+          <strong><a href="https://gist.github.com/animesh2411/b18cd58a33017b639dcf05e26c2222d4" target="_blank">Leetcode Problems</a></strong><br>
+          Problems that I solved on Leetcode
+        </div>
+      </li>
+      <li>
+        <img class="project-thumb" src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=facearea&w=256&q=80" alt="Open Source">
+        <div>
+          <strong><a href="https://github.com/animesh2411/open-source-contributions" target="_blank">Open Source Contributions</a></strong><br>
+          Active contributor to Java open-source projects, including <a href="https://github.com/animesh2411/demo-springboot-interview" target="_blank">Spring Boot</a>.
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <strong>B.Tech in Information Technology</strong> - Dr. APJ Abdul Kalam Technical University (UPTU)<br>
+        <em>2014 – 2018</em>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <ul class="contact-list">
+      <li>
+        <svg width="20" height="20" viewBox="0 0 48 48" aria-hidden="true">
+          <rect x="4" y="8" width="40" height="32" rx="4" fill="#fff"/>
+          <path d="M44 12v24a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V12l20 15 20-15z" fill="#fff"/>
+          <path d="M44 12l-20 15L4 12V8a4 4 0 0 1 4-4h32a4 4 0 0 1 4 4v4z" fill="#fff"/>
+          <path d="M44 12l-20 15L4 12V8a4 4 0 0 1 4-4h32a4 4 0 0 1 4 4v4z" fill="#fff"/>
+          <path d="M44 12l-20 15L4 12v-4c0-2.21 1.79-4 4-4h32c2.21 0 4 1.79 4 4v4z" fill="#d93025"/>
+          <path d="M4 12l20 15L44 12" fill="none" stroke="#b31412" stroke-width="2"/>
+        </svg>
+        animesh2411@gmail.com
+      </li>
+      <li>
+        <svg width="20" height="20" viewBox="0 0 448 512" aria-hidden="true"><path fill="#0073b1" d="M100.28 448H7.4V148.9h92.88zm-46.44-340.7C24.12 107.3 0 83.18 0 53.64A53.69 53.69 0 0153.77 0a53.77 53.77 0 0153.77 53.64c0 29.54-24.12 53.66-53.7 53.66zM447.9 448h-92.68V302.4c0-34.7-12.4-58.4-43.41-58.4-23.67 0-37.8 16-44.04 31.4-2.26 5.5-2.82 13.2-2.82 21v151.6h-92.7s1.22-246.2 0-271.1h92.7V205c12.3-19 34.4-46.1 83.68-46.1 61 0 106.72 39.8 106.72 125.4V448z"/></svg>
+        linkedin.com/in/animesh2411
+      </li>
+      <li>
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="#232323" d="M12 0C5.373 0 0 5.373 0 12c0 5.303 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.237c-3.338.724-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.84 1.236 1.84 1.236 1.07 1.834 2.805 1.305 3.492.998.108-.775.418-1.305.762-1.605-2.665-.304-5.467-1.332-5.467-5.93 0-1.31.469-2.381 1.236-3.221-.124-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.301 1.23a11.5 11.5 0 013.003-.404c1.019.005 2.047.138 3.006.404 2.292-1.553 3.297-1.23 3.297-1.23.653 1.653.242 2.873.118 3.176.77.84 1.233 1.911 1.233 3.221 0 4.609-2.805 5.624-5.479 5.921.43.371.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.565 21.797 24 17.299 24 12c0-6.627-5.373-12-12-12z"/>
+        </svg>
+        github.com/animesh2411
+      </li>
+    </ul>
+  </section>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

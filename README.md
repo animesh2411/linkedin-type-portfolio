@@ -78,6 +78,3 @@ This project was created as part of a **learning exercise** to explore:
 
 If you like this project, consider giving it a **star ⭐** — it helps others find it too!
 
----
-
-Would you like me to make this README in **Markdown format** ready to copy-paste into your repository (with heading styles, emojis, and code blocks preserved)?

@@ -11,21 +11,25 @@ permissions:
   pages: write
   id-token: write
 
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
 jobs:
-  build-and-deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout source code
+      - name: Checkout source
         uses: actions/checkout@v4
 
       - name: Setup Pages
-        id: pages
         uses: actions/configure-pages@v5
 
-      - name: Upload static site to GitHub Pages
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .  # The root, assuming your index.html is at repo root
+          # Change this to 'dist' or your build output dir if you use a static site generator
+          path: .
 
       - name: Deploy to GitHub Pages
         id: deployment

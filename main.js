@@ -51,6 +51,6 @@ document.getElementById('downloadBtn').addEventListener('click', function () {
         jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
       };
       html2pdf().set(opt).from(element).save();
-    }, 100); // 500ms delay – adjust if needed
+    }, 1000); // 500ms delay – adjust if needed
   });
 });;

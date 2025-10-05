@@ -53,8 +53,7 @@ This ensures your portfolio is always up-to-date.
 
 ## 📸 Preview
 
-![Portfolio Preview](https://github.com/animesh2411/linkedin-type-portfolio/raw/main/preview.png)
-*(Add a screenshot of your portfolio here for quick visual appeal.)*
+![Portfolio Preview](/raw/main/preview.png)
 
 ---
 

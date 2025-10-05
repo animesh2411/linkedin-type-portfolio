@@ -27,7 +27,7 @@ jobs:
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
-          path:
+          path: .           # THIS is the fix! Use . for root, or docs for docs folder
 
       - name: Deploy to GitHub Pages
         id: deployment
